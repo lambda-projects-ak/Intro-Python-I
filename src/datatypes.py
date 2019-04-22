@@ -10,6 +10,7 @@ on a string and an integer.
 
 x = 5
 y = "7"
+print('testing')
 
 # Write a print statement that combines x + y into the integer value 12
 
