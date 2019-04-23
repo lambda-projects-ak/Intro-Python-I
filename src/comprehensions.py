@@ -46,8 +46,12 @@ print(y)
 # the user entered into list x.
 
 x = input("Enter comma-separated numbers: ").split(',')
+# x = [1, 2, 3, 4, 5, 6, 11, "22", "word"]
 
 # What do you need between the square brackets to make it work?
-even = [item for item in range(len(x)) if item % 2 == 0 and item != 0]
+even = [int(item) for item in x if int(item) % 2 == 0]
+
+# for item in x:
+#     print(int(item) + 1)
 
 print(even)
