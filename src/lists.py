@@ -13,15 +13,24 @@ print(x)
 
 # Using y, change x so that it is [1, 2, 3, 4, 8, 9, 10]
 x.extend(y)
+# x = x + y
+#  x += y
 print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 10]
 x.remove(8)
+# del x[4]
+
+# for ind, val in enumerate(x):
+#     if ind == 4:
+#         del x[ind]
+
 print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 99, 10]
 # x.insert(5, 99)
-x.insert(len(x) - 1, 99)
+# x.insert(len(x) - 1, 99)
+x.insert(-1, 99)
 print(x)
 
 # Print the length of list x
@@ -29,5 +38,7 @@ print(len(x))
 
 # Print all the values in x multiplied by 1000
 # YOUR CODE HERE
+
+# print([n*1000 for n in x])
 for i in x:
     print(i * 1000)
