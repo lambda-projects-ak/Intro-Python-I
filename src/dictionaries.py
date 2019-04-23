@@ -64,3 +64,11 @@ for item in waypoints:
     for key, value in item.items():
         print(f'{key}: {value}')
         # print(v)
+
+
+for d in waypoints:
+    for key in d:
+        print(d[key])
+
+# for x in y
+# for item in collection
