@@ -35,6 +35,9 @@ waypoints = [
 
 # Add a new waypoint to the list
 # YOUR CODE HERE
+
+# waypoints.append(dict(lat=30, lon=-100, name='yet another place'))
+
 new_location = {
     "lat": 43,
     "lon": -124,
@@ -52,8 +55,13 @@ waypoints.append(new_location)
 # YOUR CODE HERE
 
 
-waypoints[0]["lon"] = -130
-waypoints[0]["name"] = "not a real place"
+# waypoints[0]["lon"] = -130
+# waypoints[0]["name"] = "not a real place"
+
+found = next(wp for wp in waypoints if wp['name'] == 'a place')
+if found is not None:
+    found['lon'] = -130
+    found['name'] = 'not a real place'
 
 # print(waypoints[0])
 
