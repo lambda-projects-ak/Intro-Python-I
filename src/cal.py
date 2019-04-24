@@ -23,10 +23,27 @@ import sys
 import calendar
 from datetime import datetime
 
-# Create calendar instance
-my_calendar = calendar.Calendar([6])
-
-print(my_calendar.monthdatescalendar(2000, 4))
 
 # Prompt user for current year
-# year = input("Enter year:")
+date = input("Enter month, or month and year: ")
+list_date = date.split()
+
+
+def get_date(month, year):
+    c = calendar.TextCalendar(6)
+    year = datetime.now().year
+    if len(date) == 0:
+        month = datetime.now().month
+        c.prmonth(year, month)
+        return c
+    elif len(date) == 1:
+        c.prmonth(year, int(date[0]))
+        return c
+    elif len(date) == 2:
+        c.prmonth(int(date[1]), int(date[0]))
+        return c
+    else:
+        print('invalid input, please enter [month] [year]')
+
+
+print(get_date(list_date))
