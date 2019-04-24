@@ -10,12 +10,16 @@ on a string and an integer.
 
 x = 5
 y = "7"
+print('testing')
 
 # Write a print statement that combines x + y into the integer value 12
 
 # YOUR CODE HERE
+# print(x + y) # type error, can't combine int and string
+print(x + int(y))
 
 
 # Write a print statement that combines x + y into the string value 57
 
 # YOUR CODE HERE
+print(str(x) + y)

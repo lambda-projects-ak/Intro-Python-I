@@ -1,0 +1,12 @@
+This is another string being added to bar.txt
+This is another string being added to bar.txt
+This is a string being added to bar.txt
+This is another string being added to bar.txt
+This is a string being added to bar.txt
+This is another string being added to bar.txt
+This is a string being added to bar.txt
+This is another string being added to bar.txt
+This is a string being added to bar.txt
+This is another string being added to bar.txt
+This is a string being added to bar.txt
+This is another string being added to bar.txt
