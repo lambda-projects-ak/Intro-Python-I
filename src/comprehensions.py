@@ -10,10 +10,10 @@ for more info regarding list comprehensions.
 
 # Write a list comprehension to produce the array [1, 2, 3, 4, 5]
 
-y = []
+y = [*range(1, 6)]
 
-for x in range(5):
-    y.append(x+1)
+# for x in range(5):
+# y.append(x+1)
 
 print(y)
 
@@ -23,10 +23,10 @@ print(y)
 # Write a list comprehension to produce the cubes of the numbers 0-9:
 # [0, 1, 8, 27, 64, 125, 216, 343, 512, 729]
 
-cubed = []
+cubed = [x**3 for x in range(10)]
 
-for x in range(10):
-    cubed.append(x**3)
+# for x in range(10):
+#     cubed.append(x**3)
 
 print(cubed)
 
@@ -35,10 +35,10 @@ print(cubed)
 
 a = ["foo", "bar", "baz"]
 
-y = []
+y = [x.upper() for x in a]
 
-for (i, x) in enumerate(a):
-    y.append(a[i].upper())
+# for (i, x) in enumerate(a):
+#     y.append(a[i].upper())
 
 print(y)
 
@@ -46,7 +46,7 @@ print(y)
 # the user entered into list x.
 
 x = input("Enter comma-separated numbers: ").split(',')
-# x = [1, 2, 3, 4, 5, 6, 11, "22", "word"]
+x = [1, 2, 3, 4, 5, 6, 11, "22", "word"]
 
 # What do you need between the square brackets to make it work?
 even = [int(item) for item in x if int(item) % 2 == 0]
