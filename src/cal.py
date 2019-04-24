@@ -29,7 +29,7 @@ date = input("Enter month, or month and year: ")
 list_date = date.split()
 
 
-def get_date(month, year):
+def get_date(date):
     c = calendar.TextCalendar(6)
     year = datetime.now().year
     if len(date) == 0:
